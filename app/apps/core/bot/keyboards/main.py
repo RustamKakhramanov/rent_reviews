@@ -15,7 +15,7 @@ def reply_keyboard(user: TelegramUser, hide_stay_admin: bool = False) -> ReplyKe
             builder.button( text='Стать админом')
 
     if user.role == UserRole.ADMIN.value or user.role == UserRole.WRITER.value:
-        builder.button(text='Оставить отзыв',  web_app=WebAppInfo(url="https://shop-two-ebon.vercel.app/en/shop"))
+        builder.button(text='Оставить отзыв',  web_app=WebAppInfo(url="https://rent-reviews.vercel.app"))
 
     builder.button(text='Проверить')
 
