@@ -14,14 +14,14 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.services.translater import t as trans
 from app.apps.core.bot.states import WorkState
 
+
 class StartController(BaseController):
     case: TelegramUserCase = TelegramUserCase()
-    
+
     async def __call__(self):
         message = self.message
         if message.from_user is None:
             return
-        await self.case.handle_start()
         
- 
-
+        await self.case.handle_start()
+       

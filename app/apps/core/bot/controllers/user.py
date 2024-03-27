@@ -27,6 +27,5 @@ class UserController(BaseController):
             
     async def allow_writer(self, data:UserCallbackData):
         await self.case.allow_writer(data)  
-    
- 
+        
 

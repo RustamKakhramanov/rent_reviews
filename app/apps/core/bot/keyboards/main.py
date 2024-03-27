@@ -15,11 +15,11 @@ def reply_keyboard(user: TelegramUser, hide_stay_admin: bool = False) -> ReplyKe
             builder.button( text='Стать админом')
 
     if user.role == UserRole.ADMIN.value or user.role == UserRole.WRITER.value:
-        builder.button(text='Оставить отзыв',  web_app=WebAppInfo(url="https://rent-reviews.vercel.app"))
+        builder.button(text='Добавить недобросовестного клиента',  web_app=WebAppInfo(url="https://rent-reviews.vercel.app"))
 
     builder.button(text='Проверить')
 
-    return builder.as_markup(resize_keyboard=False)
+    return builder.adjust(1,1).as_markup(resize_keyboard=False)
 
 
 def allow_writer(user: TelegramUser) -> InlineKeyboardMarkup:
@@ -27,6 +27,19 @@ def allow_writer(user: TelegramUser) -> InlineKeyboardMarkup:
         InlineKeyboardButton(
             text='Утвердить',
             callback_data=UserCallbackData(action='allow_writer', id=user.telegram_id).pack())
+    ]])
+
+def moderate_review(review_id: TelegramUser) -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(inline_keyboard= [[
+        InlineKeyboardButton(
+            text='Утвердить',
+            callback_data=UserCallbackData(action='allow_review', id=review_id).pack()),
+        InlineKeyboardButton(
+            text='Редактировать',
+            callback_data=UserCallbackData(action='ask_edit_review', id=review_id).pack()),
+        InlineKeyboardButton(
+            text='Удалить',
+            callback_data=UserCallbackData(action='delete_review', id=review_id).pack()),
     ]])
 
 

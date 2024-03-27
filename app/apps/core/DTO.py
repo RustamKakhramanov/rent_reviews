@@ -1,10 +1,11 @@
+import aiogram.fsm.state
 from typing import List
 from django.db.models import Model
 import json
 from app.apps.core.models import Search, TariffPlan, TelegramUser
 from app.apps.core.bot.enum import SearchType
 from app.services.has_attributes import HasAttributes
-
+from aiogram.fsm.state import State, StatesGroup
 
 class DTO(HasAttributes):
     def __init__(self, data: dict | Model| None):
@@ -115,3 +116,11 @@ class SearchOrderDTO(DTO):
 class ChatsWithOrdersDto(DTO):
     chat_id:str|int = None
     orders:List[SearchOrderDTO] = None
+    
+    
+class DebtorSearchState(StatesGroup):
+    iin = State()
+    
+class DebtorState(StatesGroup):
+    msg_id = State()
+    text = State()

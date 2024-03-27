@@ -69,7 +69,6 @@ class UserRepository:
     @sync_to_async
     def find(self: None, id: int) -> tuple[TelegramUser, bool, None]:
         return TelegramUser.objects.filter(telegram_id=id).first()
-    
     @sync_to_async
     def get_admins(self: None) -> tuple[TelegramUser, bool, None]:
         return BaseRepository().to_list(TelegramUser.objects.filter(role=UserRole.ADMIN.value).all())

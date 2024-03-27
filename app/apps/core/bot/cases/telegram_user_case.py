@@ -20,6 +20,7 @@ from app.apps.core.bot.filters import UserCallbackData
 from app.apps.core.bot.enum import UserRole
 from aiogram.enums import ParseMode
 
+
 class TelegramUserCase(Case):
     repo: UserRepository = UserRepository
     message: Message
@@ -29,14 +30,16 @@ class TelegramUserCase(Case):
         await self.message.answer(transl('start.question_name'), reply_markup=force_reply())
         await self.state.set_state(GetUsername.get_username)
 
-    async def answer_for_work(self, user:TelegramUser):
-        text =  as_list(
+    async def answer_for_work(self, user: TelegramUser):
+        text = as_list(
             Bold(f'Здравствуйте, {user.telegram_name}!'),
             'Начните работу с ботом. '
         )
-        
+
         await self.response(text=text, reply_markup=reply_keyboard(user))
         
+      
+
     async def handle_start(self):
         user = await self.findUser()
 
@@ -45,9 +48,8 @@ class TelegramUserCase(Case):
 
         if not user.telegram_name:
             return await self.answer_for_name()
-            
+
         await self.answer_for_work(user)
-       
 
     async def check_and_set_name(self):
         message = self.message
@@ -70,7 +72,7 @@ class TelegramUserCase(Case):
         message: None | Message = None,
     ) -> tuple[TelegramUser, bool]:
         user, tariff = await self.repo.save_and_set_tariff(data=self.getUserObject(), get_entities=True)
-        
+
         return user
 
     # get User Object from Message
@@ -85,7 +87,7 @@ class TelegramUserCase(Case):
             t_name += self.message.from_user.first_name
 
         if (self.message.from_user.last_name):
-            t_name +=  ' '+self.message.from_user.last_name
+            t_name += ' '+self.message.from_user.last_name
 
         data = {
             'telegram_id': self.message.from_user.id,
@@ -97,30 +99,31 @@ class TelegramUserCase(Case):
             return data[property]
 
         return data
-    
+
     async def ask_writer(self):
         admins = await self.repo.get_admins()
         user = await self.repo.find(id=self.message.from_user.id)
-        
+
         message = Messager.ask_writer(user)
-      
+
         # if user and user.role == UserRole.USER.value:
         for admin in admins:
             await self.message.bot.send_message(chat_id=admin.telegram_id, text=message.as_html(), parse_mode=ParseMode.HTML, reply_markup=allow_writer(user))
-    
+
         await self.repo.update(id=user.telegram_id, role=UserRole.REQUEST_WRITER.value)
         await self.message.answer('Ваш запрос принят на рассмотрение!', reply_markup=reply_keyboard(user, True))
         await self.message.delete()
-    
-    async def allow_writer(self, data:UserCallbackData):
+
+    async def allow_writer(self, data: UserCallbackData):
         await self.repo.update(id=data.id, role=UserRole.WRITER.value)
-        
+
         user = await self.repo.find(data.id)
-        
-        await self.bot.send_message(data.id,'Ваш запрос одобрен!', reply_markup=reply_keyboard(user, True))
+
+        await self.bot.send_message(data.id, 'Ваш запрос одобрен!', reply_markup=reply_keyboard(user, True))
         await self.message.edit_text(Messager.ask_writer(user, True).as_html(), parse_mode=ParseMode.HTML, reply_markup=None)
-        
-        
-            
+
+    async def check_debtor(self):
+        pass
+
 
 CORE_USE_CASE: Final[TelegramUserCase] = TelegramUserCase()

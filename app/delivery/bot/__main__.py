@@ -22,14 +22,12 @@ def _register_routers() -> None:
     dispatcher.include_router(admin_router)
 
 
-# async def _set_bot_commands() -> None:
-#     await bot.set_my_commands(
-#         [
-#             BotCommand(command="/tariff", description=t('buttons.bot.tariff')),
-#             BotCommand(command="/start", description=t('buttons.bot.start')),
-#             BotCommand(command="/reload", description=t('buttons.bot.status')),
-#         ]
-#     )
+async def _set_bot_commands() -> None:
+    await bot.set_my_commands(
+        [
+           BotCommand(command="/search", description='Проверить'),
+        ]
+    )
 
 def _register_middleware() -> None:
     for m in mws:
@@ -46,7 +44,7 @@ async def on_startup() -> None:
     _register_middleware()
 
     # Set default commands
-    # await _set_bot_commands()
+    await _set_bot_commands()
 
 
 def run_polling() -> None:

@@ -2,7 +2,7 @@ import asgiref.sync
 from django.db import models
 from django.contrib.contenttypes.fields import GenericForeignKey, GenericRelation
 from django.contrib.contenttypes.models import ContentType
-from app.apps.core.bot.enum import SearchStatus, SearchType, UserRole
+from app.apps.core.bot.enum import ReviewStatus, SearchStatus, SearchType, UserRole
 from asgiref.sync import sync_to_async, async_to_sync
 
 
@@ -108,6 +108,15 @@ class TelegramUser(models.Model):
             
         return mess
 
+
+class Debtor(models.Model):
+    id=models.AutoField(primary_key=True)
+    user = models.ForeignKey(TelegramUser, on_delete=models.CASCADE, null=True)
+    status = models.CharField(max_length=50,  default=ReviewStatus.REQUESTED) 
+    iin_or_bin = models.CharField(max_length=50,  blank=True, null=True, )
+    firstname = models.CharField(max_length=50,  blank=True, null=True, )
+    lastname = models.CharField(max_length=50,  blank=True, null=True, )
+    text = models.CharField(max_length=255,  blank=True, null=True, )
 
 class Search(models.Model):
     SEARCH_STATUSES = (

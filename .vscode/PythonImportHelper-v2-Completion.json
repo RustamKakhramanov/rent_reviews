@@ -105,6 +105,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "Callable",
         "importPath": "typing",
         "description": "typing",
@@ -466,6 +474,30 @@
         "documentation": {}
     },
     {
+        "label": "async_to_sync",
+        "importPath": "asgiref.sync",
+        "description": "asgiref.sync",
+        "isExtraImport": true,
+        "detail": "asgiref.sync",
+        "documentation": {}
+    },
+    {
+        "label": "sync_to_async",
+        "importPath": "asgiref.sync",
+        "description": "asgiref.sync",
+        "isExtraImport": true,
+        "detail": "asgiref.sync",
+        "documentation": {}
+    },
+    {
+        "label": "sync_to_async",
+        "importPath": "asgiref.sync",
+        "description": "asgiref.sync",
+        "isExtraImport": true,
+        "detail": "asgiref.sync",
+        "documentation": {}
+    },
+    {
         "label": "sync_to_async",
         "importPath": "asgiref.sync",
         "description": "asgiref.sync",
@@ -635,6 +667,30 @@
         "documentation": {}
     },
     {
+        "label": "Message",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "BotCommand",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "aiogram.types",
+        "description": "aiogram.types",
+        "isExtraImport": true,
+        "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "aiogram.types",
         "description": "aiogram.types",
@@ -968,6 +1024,14 @@
         "description": "aiogram.types",
         "isExtraImport": true,
         "detail": "aiogram.types",
+        "documentation": {}
+    },
+    {
+        "label": "FSMContext",
+        "importPath": "aiogram.fsm.context",
+        "description": "aiogram.fsm.context",
+        "isExtraImport": true,
+        "detail": "aiogram.fsm.context",
         "documentation": {}
     },
     {
@@ -1308,6 +1372,14 @@
         "documentation": {}
     },
     {
+        "label": "Debtor",
+        "importPath": "app.apps.core.models",
+        "description": "app.apps.core.models",
+        "isExtraImport": true,
+        "detail": "app.apps.core.models",
+        "documentation": {}
+    },
+    {
         "label": "Search",
         "importPath": "app.apps.core.models",
         "description": "app.apps.core.models",
@@ -1564,6 +1636,14 @@
         "documentation": {}
     },
     {
+        "label": "UserRepository",
+        "importPath": "app.apps.core.repositories.user_repository",
+        "description": "app.apps.core.repositories.user_repository",
+        "isExtraImport": true,
+        "detail": "app.apps.core.repositories.user_repository",
+        "documentation": {}
+    },
+    {
         "label": "SearchRepository",
         "importPath": "app.apps.core.repositories.search_repository",
         "description": "app.apps.core.repositories.search_repository",
@@ -1713,6 +1793,14 @@
         "description": "app.apps.core.bot.states",
         "isExtraImport": true,
         "detail": "app.apps.core.bot.states",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "importPath": "app.services.translater",
+        "description": "app.services.translater",
+        "isExtraImport": true,
+        "detail": "app.services.translater",
         "documentation": {}
     },
     {
@@ -1964,22 +2052,6 @@
         "documentation": {}
     },
     {
-        "label": "SearchCallbackData",
-        "importPath": "app.apps.core.bot.filters",
-        "description": "app.apps.core.bot.filters",
-        "isExtraImport": true,
-        "detail": "app.apps.core.bot.filters",
-        "documentation": {}
-    },
-    {
-        "label": "UserCallbackData",
-        "importPath": "app.apps.core.bot.filters",
-        "description": "app.apps.core.bot.filters",
-        "isExtraImport": true,
-        "detail": "app.apps.core.bot.filters",
-        "documentation": {}
-    },
-    {
         "label": "UserCallbackData",
         "importPath": "app.apps.core.bot.filters",
         "description": "app.apps.core.bot.filters",
@@ -1997,14 +2069,6 @@
     },
     {
         "label": "UserCallbackData",
-        "importPath": "app.apps.core.bot.filters",
-        "description": "app.apps.core.bot.filters",
-        "isExtraImport": true,
-        "detail": "app.apps.core.bot.filters",
-        "documentation": {}
-    },
-    {
-        "label": "SearchCallbackData",
         "importPath": "app.apps.core.bot.filters",
         "description": "app.apps.core.bot.filters",
         "isExtraImport": true,
@@ -2068,6 +2132,38 @@
         "documentation": {}
     },
     {
+        "label": "SearchCallbackData",
+        "importPath": "app.apps.core.bot.filters",
+        "description": "app.apps.core.bot.filters",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.filters",
+        "documentation": {}
+    },
+    {
+        "label": "UserCallbackData",
+        "importPath": "app.apps.core.bot.filters",
+        "description": "app.apps.core.bot.filters",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.filters",
+        "documentation": {}
+    },
+    {
+        "label": "SearchCallbackData",
+        "importPath": "app.apps.core.bot.filters",
+        "description": "app.apps.core.bot.filters",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.filters",
+        "documentation": {}
+    },
+    {
+        "label": "UserCallbackData",
+        "importPath": "app.apps.core.bot.filters",
+        "description": "app.apps.core.bot.filters",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.filters",
+        "documentation": {}
+    },
+    {
         "label": "UserCallbackData",
         "importPath": "app.apps.core.bot.filters",
         "description": "app.apps.core.bot.filters",
@@ -2129,15 +2225,6 @@
         "description": "app.services.redis",
         "isExtraImport": true,
         "detail": "app.services.redis",
-        "documentation": {}
-    },
-    {
-        "label": "aiogram.utils.formatting",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "aiogram.utils.formatting",
-        "description": "aiogram.utils.formatting",
-        "detail": "aiogram.utils.formatting",
         "documentation": {}
     },
     {
@@ -2246,6 +2333,14 @@
     },
     {
         "label": "Bold",
+        "importPath": "aiogram.utils.formatting",
+        "description": "aiogram.utils.formatting",
+        "isExtraImport": true,
+        "detail": "aiogram.utils.formatting",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "aiogram.utils.formatting",
         "description": "aiogram.utils.formatting",
         "isExtraImport": true,
@@ -2359,6 +2454,14 @@
     },
     {
         "label": "messager",
+        "importPath": "app.apps.core.bot.helpers",
+        "description": "app.apps.core.bot.helpers",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "get_debtor_info",
         "importPath": "app.apps.core.bot.helpers",
         "description": "app.apps.core.bot.helpers",
         "isExtraImport": true,
@@ -2566,6 +2669,14 @@
         "documentation": {}
     },
     {
+        "label": "force_reply",
+        "importPath": "app.apps.core.bot.keyboards.search",
+        "description": "app.apps.core.bot.keyboards.search",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.keyboards.search",
+        "documentation": {}
+    },
+    {
         "label": "set_chats",
         "importPath": "app.apps.core.bot.keyboards.search",
         "description": "app.apps.core.bot.keyboards.search",
@@ -2647,6 +2758,14 @@
         "documentation": {}
     },
     {
+        "label": "DebtorSearchState",
+        "importPath": "app.apps.core.DTO",
+        "description": "app.apps.core.DTO",
+        "isExtraImport": true,
+        "detail": "app.apps.core.DTO",
+        "documentation": {}
+    },
+    {
         "label": "KeywordsDto",
         "importPath": "app.apps.core.DTO",
         "description": "app.apps.core.DTO",
@@ -2696,6 +2815,22 @@
     },
     {
         "label": "KeywordsDto",
+        "importPath": "app.apps.core.DTO",
+        "description": "app.apps.core.DTO",
+        "isExtraImport": true,
+        "detail": "app.apps.core.DTO",
+        "documentation": {}
+    },
+    {
+        "label": "DebtorSearchState",
+        "importPath": "app.apps.core.DTO",
+        "description": "app.apps.core.DTO",
+        "isExtraImport": true,
+        "detail": "app.apps.core.DTO",
+        "documentation": {}
+    },
+    {
+        "label": "DebtorState",
         "importPath": "app.apps.core.DTO",
         "description": "app.apps.core.DTO",
         "isExtraImport": true,
@@ -2863,26 +2998,11 @@
         "documentation": {}
     },
     {
-        "label": "SearchStatus",
+        "label": "app.apps.core.bot.enum",
+        "kind": 6,
+        "isExtraImport": true,
         "importPath": "app.apps.core.bot.enum",
         "description": "app.apps.core.bot.enum",
-        "isExtraImport": true,
-        "detail": "app.apps.core.bot.enum",
-        "documentation": {}
-    },
-    {
-        "label": "SearchType",
-        "importPath": "app.apps.core.bot.enum",
-        "description": "app.apps.core.bot.enum",
-        "isExtraImport": true,
-        "detail": "app.apps.core.bot.enum",
-        "documentation": {}
-    },
-    {
-        "label": "UserRole",
-        "importPath": "app.apps.core.bot.enum",
-        "description": "app.apps.core.bot.enum",
-        "isExtraImport": true,
         "detail": "app.apps.core.bot.enum",
         "documentation": {}
     },
@@ -2911,23 +3031,7 @@
         "documentation": {}
     },
     {
-        "label": "SearchStatus",
-        "importPath": "app.apps.core.bot.enum",
-        "description": "app.apps.core.bot.enum",
-        "isExtraImport": true,
-        "detail": "app.apps.core.bot.enum",
-        "documentation": {}
-    },
-    {
-        "label": "UserRole",
-        "importPath": "app.apps.core.bot.enum",
-        "description": "app.apps.core.bot.enum",
-        "isExtraImport": true,
-        "detail": "app.apps.core.bot.enum",
-        "documentation": {}
-    },
-    {
-        "label": "SearchType",
+        "label": "ReviewStatus",
         "importPath": "app.apps.core.bot.enum",
         "description": "app.apps.core.bot.enum",
         "isExtraImport": true,
@@ -2959,11 +3063,83 @@
         "documentation": {}
     },
     {
-        "label": "Messager",
-        "importPath": "app.apps.core.bot.services.messager",
-        "description": "app.apps.core.bot.services.messager",
+        "label": "ReviewStatus",
+        "importPath": "app.apps.core.bot.enum",
+        "description": "app.apps.core.bot.enum",
         "isExtraImport": true,
-        "detail": "app.apps.core.bot.services.messager",
+        "detail": "app.apps.core.bot.enum",
+        "documentation": {}
+    },
+    {
+        "label": "UserRole",
+        "importPath": "app.apps.core.bot.enum",
+        "description": "app.apps.core.bot.enum",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.enum",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewStatus",
+        "importPath": "app.apps.core.bot.enum",
+        "description": "app.apps.core.bot.enum",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.enum",
+        "documentation": {}
+    },
+    {
+        "label": "SearchStatus",
+        "importPath": "app.apps.core.bot.enum",
+        "description": "app.apps.core.bot.enum",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.enum",
+        "documentation": {}
+    },
+    {
+        "label": "UserRole",
+        "importPath": "app.apps.core.bot.enum",
+        "description": "app.apps.core.bot.enum",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.enum",
+        "documentation": {}
+    },
+    {
+        "label": "SearchType",
+        "importPath": "app.apps.core.bot.enum",
+        "description": "app.apps.core.bot.enum",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.enum",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewStatus",
+        "importPath": "app.apps.core.bot.enum",
+        "description": "app.apps.core.bot.enum",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.enum",
+        "documentation": {}
+    },
+    {
+        "label": "SearchStatus",
+        "importPath": "app.apps.core.bot.enum",
+        "description": "app.apps.core.bot.enum",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.enum",
+        "documentation": {}
+    },
+    {
+        "label": "SearchType",
+        "importPath": "app.apps.core.bot.enum",
+        "description": "app.apps.core.bot.enum",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.enum",
+        "documentation": {}
+    },
+    {
+        "label": "UserRole",
+        "importPath": "app.apps.core.bot.enum",
+        "description": "app.apps.core.bot.enum",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.enum",
         "documentation": {}
     },
     {
@@ -3032,11 +3208,36 @@
         "documentation": {}
     },
     {
-        "label": "allow_writer",
+        "label": "moderate_review",
         "importPath": "app.apps.core.bot.keyboards.main",
         "description": "app.apps.core.bot.keyboards.main",
         "isExtraImport": true,
         "detail": "app.apps.core.bot.keyboards.main",
+        "documentation": {}
+    },
+    {
+        "label": "moderate_review",
+        "importPath": "app.apps.core.bot.keyboards.main",
+        "description": "app.apps.core.bot.keyboards.main",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.keyboards.main",
+        "documentation": {}
+    },
+    {
+        "label": "aiogram.enums",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aiogram.enums",
+        "description": "aiogram.enums",
+        "detail": "aiogram.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ParseMode",
+        "importPath": "aiogram.enums",
+        "description": "aiogram.enums",
+        "isExtraImport": true,
+        "detail": "aiogram.enums",
         "documentation": {}
     },
     {
@@ -3057,6 +3258,14 @@
     },
     {
         "label": "*",
+        "importPath": "aiogram.enums",
+        "description": "aiogram.enums",
+        "isExtraImport": true,
+        "detail": "aiogram.enums",
+        "documentation": {}
+    },
+    {
+        "label": "ParseMode",
         "importPath": "aiogram.enums",
         "description": "aiogram.enums",
         "isExtraImport": true,
@@ -3145,6 +3354,54 @@
         "documentation": {}
     },
     {
+        "label": "Router",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "F",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Bot",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Router",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "types",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "F",
+        "importPath": "aiogram",
+        "description": "aiogram",
+        "isExtraImport": true,
+        "detail": "aiogram",
+        "documentation": {}
+    },
+    {
         "label": "Bot",
         "importPath": "aiogram",
         "description": "aiogram",
@@ -3550,6 +3807,14 @@
         "description": "aiogram",
         "isExtraImport": true,
         "detail": "aiogram",
+        "documentation": {}
+    },
+    {
+        "label": "Command",
+        "importPath": "aiogram.filters",
+        "description": "aiogram.filters",
+        "isExtraImport": true,
+        "detail": "aiogram.filters",
         "documentation": {}
     },
     {
@@ -3641,6 +3906,22 @@
         "documentation": {}
     },
     {
+        "label": "TelegramUserCase",
+        "importPath": "app.apps.core.bot.cases.telegram_user_case",
+        "description": "app.apps.core.bot.cases.telegram_user_case",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.cases.telegram_user_case",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "importPath": "app.config.application",
+        "description": "app.config.application",
+        "isExtraImport": true,
+        "detail": "app.config.application",
+        "documentation": {}
+    },
+    {
         "label": "INSTALLED_APPS",
         "importPath": "app.config.application",
         "description": "app.config.application",
@@ -3705,18 +3986,11 @@
         "documentation": {}
     },
     {
-        "label": "State",
+        "label": "aiogram.fsm.state",
+        "kind": 6,
+        "isExtraImport": true,
         "importPath": "aiogram.fsm.state",
         "description": "aiogram.fsm.state",
-        "isExtraImport": true,
-        "detail": "aiogram.fsm.state",
-        "documentation": {}
-    },
-    {
-        "label": "StatesGroup",
-        "importPath": "aiogram.fsm.state",
-        "description": "aiogram.fsm.state",
-        "isExtraImport": true,
         "detail": "aiogram.fsm.state",
         "documentation": {}
     },
@@ -3798,6 +4072,46 @@
         "description": "aiogram.fsm.state",
         "isExtraImport": true,
         "detail": "aiogram.fsm.state",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "aiogram.fsm.state",
+        "description": "aiogram.fsm.state",
+        "isExtraImport": true,
+        "detail": "aiogram.fsm.state",
+        "documentation": {}
+    },
+    {
+        "label": "StatesGroup",
+        "importPath": "aiogram.fsm.state",
+        "description": "aiogram.fsm.state",
+        "isExtraImport": true,
+        "detail": "aiogram.fsm.state",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "aiogram.fsm.state",
+        "description": "aiogram.fsm.state",
+        "isExtraImport": true,
+        "detail": "aiogram.fsm.state",
+        "documentation": {}
+    },
+    {
+        "label": "StatesGroup",
+        "importPath": "aiogram.fsm.state",
+        "description": "aiogram.fsm.state",
+        "isExtraImport": true,
+        "detail": "aiogram.fsm.state",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncSession",
+        "importPath": "sqlalchemy.ext.asyncio",
+        "description": "sqlalchemy.ext.asyncio",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.asyncio",
         "documentation": {}
     },
     {
@@ -3969,6 +4283,14 @@
         "documentation": {}
     },
     {
+        "label": "delete_msg",
+        "importPath": "app.apps.core.bot.keyboards.buttons",
+        "description": "app.apps.core.bot.keyboards.buttons",
+        "isExtraImport": true,
+        "detail": "app.apps.core.bot.keyboards.buttons",
+        "documentation": {}
+    },
+    {
         "label": "AdvancedModeCase",
         "importPath": "app.apps.core.bot.cases.advanced_mode",
         "description": "app.apps.core.bot.cases.advanced_mode",
@@ -3982,6 +4304,31 @@
         "description": "app.apps.core.bot.keyboards.advanced_mode",
         "isExtraImport": true,
         "detail": "app.apps.core.bot.keyboards.advanced_mode",
+        "documentation": {}
+    },
+    {
+        "label": "DebtorRepository",
+        "importPath": "app.apps.core.repositories.debtor_repository",
+        "description": "app.apps.core.repositories.debtor_repository",
+        "isExtraImport": true,
+        "detail": "app.apps.core.repositories.debtor_repository",
+        "documentation": {}
+    },
+    {
+        "label": "DebtorRepository",
+        "importPath": "app.apps.core.repositories.debtor_repository",
+        "description": "app.apps.core.repositories.debtor_repository",
+        "isExtraImport": true,
+        "detail": "app.apps.core.repositories.debtor_repository",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -4100,15 +4447,6 @@
         "documentation": {}
     },
     {
-        "label": "inspect",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "inspect",
-        "description": "inspect",
-        "detail": "inspect",
-        "documentation": {}
-    },
-    {
         "label": "StartController",
         "importPath": "app.apps.core.bot.controllers.start",
         "description": "app.apps.core.bot.controllers.start",
@@ -4133,27 +4471,35 @@
         "documentation": {}
     },
     {
-        "label": "ChatActionSender",
-        "importPath": "aiogram.utils.chat_action",
-        "description": "aiogram.utils.chat_action",
+        "label": "CheckController",
+        "importPath": "app.apps.core.bot.controllers.check",
+        "description": "app.apps.core.bot.controllers.check",
         "isExtraImport": true,
-        "detail": "aiogram.utils.chat_action",
+        "detail": "app.apps.core.bot.controllers.check",
         "documentation": {}
     },
     {
-        "label": "SearchController",
-        "importPath": "app.apps.core.bot.controllers.search",
-        "description": "app.apps.core.bot.controllers.search",
+        "label": "safe_parse_webapp_init_data",
+        "importPath": "aiogram.utils.web_app",
+        "description": "aiogram.utils.web_app",
         "isExtraImport": true,
-        "detail": "app.apps.core.bot.controllers.search",
+        "detail": "aiogram.utils.web_app",
         "documentation": {}
     },
     {
-        "label": "AdvancedModeController",
-        "importPath": "app.apps.core.bot.controllers.advanced_mode",
-        "description": "app.apps.core.bot.controllers.advanced_mode",
+        "label": "Request",
+        "importPath": "aiohttp.web_request",
+        "description": "aiohttp.web_request",
         "isExtraImport": true,
-        "detail": "app.apps.core.bot.controllers.advanced_mode",
+        "detail": "aiohttp.web_request",
+        "documentation": {}
+    },
+    {
+        "label": "json_response",
+        "importPath": "aiohttp.web_response",
+        "description": "aiohttp.web_response",
+        "isExtraImport": true,
+        "detail": "aiohttp.web_response",
         "documentation": {}
     },
     {
@@ -4219,6 +4565,24 @@
         "description": "aiogram.filters.callback_data",
         "isExtraImport": true,
         "detail": "aiogram.filters.callback_data",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "xml.etree.ElementTree",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xml.etree.ElementTree",
+        "description": "xml.etree.ElementTree",
+        "detail": "xml.etree.ElementTree",
         "documentation": {}
     },
     {
@@ -4654,6 +5018,78 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -4677,6 +5113,14 @@
         "importPath": "django.utils.timezone",
         "description": "django.utils.timezone",
         "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "BaseRepository",
+        "importPath": "app.apps.core.repositories.base",
+        "description": "app.apps.core.repositories.base",
+        "isExtraImport": true,
+        "detail": "app.apps.core.repositories.base",
         "documentation": {}
     },
     {
@@ -5333,7 +5777,7 @@
         "kind": 6,
         "importPath": "app.apps.core.bot.cases.telegram_user_case",
         "description": "app.apps.core.bot.cases.telegram_user_case",
-        "peekOfCode": "class TelegramUserCase(Case):\n    repo: UserRepository = UserRepository\n    message: Message\n    state: FSMContext\n    async def answer_for_name(self):\n        await self.message.answer(transl('start.question_name'), reply_markup=force_reply())\n        await self.state.set_state(GetUsername.get_username)\n    async def answer_for_work(self, user:TelegramUser):\n        text =  as_list(\n            Bold(f'Здравствуйте, {user.telegram_name}!'),",
+        "peekOfCode": "class TelegramUserCase(Case):\n    repo: UserRepository = UserRepository\n    message: Message\n    state: FSMContext\n    async def answer_for_name(self):\n        await self.message.answer(transl('start.question_name'), reply_markup=force_reply())\n        await self.state.set_state(GetUsername.get_username)\n    async def answer_for_work(self, user: TelegramUser):\n        text = as_list(\n            Bold(f'Здравствуйте, {user.telegram_name}!'),",
         "detail": "app.apps.core.bot.cases.telegram_user_case",
         "documentation": {}
     },
@@ -5362,6 +5806,15 @@
         "description": "app.apps.core.bot.controllers.advanced_mode",
         "peekOfCode": "class AdvancedModeController(BaseController):\n    case: AdvancedModeCase = AdvancedModeCase()\n    async def show_info(self, data: UserCallbackData):\n        await self.message.delete()\n        await self.response(\n           messager('show_advanced_mode_info')\n        )\n        #  \"info\":{\n        # \"telegram\":{\n        #     \"advanced_mode\":{",
         "detail": "app.apps.core.bot.controllers.advanced_mode",
+        "documentation": {}
+    },
+    {
+        "label": "CheckController",
+        "kind": 6,
+        "importPath": "app.apps.core.bot.controllers.check",
+        "description": "app.apps.core.bot.controllers.check",
+        "peekOfCode": "class CheckController(BaseController):\n    case: TelegramUserCase = TelegramUserCase()\n    repo: DebtorRepository = DebtorRepository\n    message: Message\n    state: FSMContext\n    def get_years_from_iin(self, iin: str) -> List[int]:\n        year_str = iin[:2]\n        if(year_str[0] == '0'):\n            year = int(f'20{year_str}')\n        else:",
+        "detail": "app.apps.core.bot.controllers.check",
         "documentation": {}
     },
     {
@@ -5522,7 +5975,7 @@
         "kind": 2,
         "importPath": "app.apps.core.bot.keyboards.main",
         "description": "app.apps.core.bot.keyboards.main",
-        "peekOfCode": "def reply_keyboard(user: TelegramUser, hide_stay_admin: bool = False) -> ReplyKeyboardMarkup:\n    builder = ReplyKeyboardBuilder()\n    if not hide_stay_admin:\n        if user.role == UserRole.USER.value:\n            builder.button( text='Стать админом')\n    if user.role == UserRole.ADMIN.value or user.role == UserRole.WRITER.value:\n        builder.button(text='Оставить отзыв',  web_app=WebAppInfo(url=\"https://shop-two-ebon.vercel.app/en/shop\"))\n    builder.button(text='Проверить')\n    return builder.as_markup(resize_keyboard=False)\ndef allow_writer(user: TelegramUser) -> InlineKeyboardMarkup:",
+        "peekOfCode": "def reply_keyboard(user: TelegramUser, hide_stay_admin: bool = False) -> ReplyKeyboardMarkup:\n    builder = ReplyKeyboardBuilder()\n    if not hide_stay_admin:\n        if user.role == UserRole.USER.value:\n            builder.button( text='Стать админом')\n    if user.role == UserRole.ADMIN.value or user.role == UserRole.WRITER.value:\n        builder.button(text='Добавить недобросовестного клиента',  web_app=WebAppInfo(url=\"https://rent-reviews.vercel.app\"))\n    builder.button(text='Проверить')\n    return builder.adjust(1,1).as_markup(resize_keyboard=False)\ndef allow_writer(user: TelegramUser) -> InlineKeyboardMarkup:",
         "detail": "app.apps.core.bot.keyboards.main",
         "documentation": {}
     },
@@ -5531,7 +5984,16 @@
         "kind": 2,
         "importPath": "app.apps.core.bot.keyboards.main",
         "description": "app.apps.core.bot.keyboards.main",
-        "peekOfCode": "def allow_writer(user: TelegramUser) -> InlineKeyboardMarkup:\n    return InlineKeyboardMarkup(inline_keyboard= [[\n        InlineKeyboardButton(\n            text='Утвердить',\n            callback_data=UserCallbackData(action='allow_writer', id=user.telegram_id).pack())\n    ]])\ndef start_keyboard(user: TelegramUser) -> InlineKeyboardMarkup:\n    builder = InlineKeyboardBuilder()\n    if not user.is_admin:\n        builder.button(",
+        "peekOfCode": "def allow_writer(user: TelegramUser) -> InlineKeyboardMarkup:\n    return InlineKeyboardMarkup(inline_keyboard= [[\n        InlineKeyboardButton(\n            text='Утвердить',\n            callback_data=UserCallbackData(action='allow_writer', id=user.telegram_id).pack())\n    ]])\ndef moderate_review(review_id: TelegramUser) -> InlineKeyboardMarkup:\n    return InlineKeyboardMarkup(inline_keyboard= [[\n        InlineKeyboardButton(\n            text='Утвердить',",
+        "detail": "app.apps.core.bot.keyboards.main",
+        "documentation": {}
+    },
+    {
+        "label": "moderate_review",
+        "kind": 2,
+        "importPath": "app.apps.core.bot.keyboards.main",
+        "description": "app.apps.core.bot.keyboards.main",
+        "peekOfCode": "def moderate_review(review_id: TelegramUser) -> InlineKeyboardMarkup:\n    return InlineKeyboardMarkup(inline_keyboard= [[\n        InlineKeyboardButton(\n            text='Утвердить',\n            callback_data=UserCallbackData(action='allow_review', id=review_id).pack()),\n        InlineKeyboardButton(\n            text='Редактировать',\n            callback_data=UserCallbackData(action='ask_edit_review', id=review_id).pack()),\n        InlineKeyboardButton(\n            text='Удалить',",
         "detail": "app.apps.core.bot.keyboards.main",
         "documentation": {}
     },
@@ -5738,7 +6200,7 @@
         "kind": 6,
         "importPath": "app.apps.core.bot.routes.user_router",
         "description": "app.apps.core.bot.routes.user_router",
-        "peekOfCode": "class WebAppDataFilter(Filter):\n    async def __call__(self, message: Message, **kwargs) -> Union[bool, Dict[str, Any]]:\n        return dict(web_app_data=message.web_app_data) if message.web_app_data else False\n# Хэндлер для обработки we_app_data\n@router.message(WebAppDataFilter())\nasync def web_app_data(message: Message, state: FSMContext):\n    data =  json.loads(message.web_app_data.data)\n    print(data)",
+        "peekOfCode": "class WebAppDataFilter(Filter):\n    async def __call__(self, message: Message, **kwargs) -> Union[bool, Dict[str, Any]]:\n        return dict(web_app_data=message.web_app_data) if message.web_app_data else False\n# Хэндлер для обработки we_app_data\n@router.message(WebAppDataFilter())\nasync def web_app_data(message: Message, state: FSMContext):\n    data =  json.loads(message.web_app_data.data)\n    user = await UserRepository.find(id=message.from_user.id)\n    data['user'] = user\n    if(user.role==UserRole.ADMIN.value):",
         "detail": "app.apps.core.bot.routes.user_router",
         "documentation": {}
     },
@@ -5747,7 +6209,7 @@
         "kind": 5,
         "importPath": "app.apps.core.bot.routes.user_router",
         "description": "app.apps.core.bot.routes.user_router",
-        "peekOfCode": "router = Router()\nrouter.action_message(StartCommand, StartCommand.__call__,\n                      Command(commands=[\"start\"]))\nrouter.action_message(UserCommands, UserCommands.set_name,\n                      GetUsername.get_username)\nrouter.action_message(JobCommands, JobCommands.set_chat, F.chat_shared)\n# TODO make action route \n# router.action(JobCommands, JobCommands.set_keywords, 'start_set_advanced_mode')\n@router.message(F.text == 'Стать админом')\nasync def start_search(message: Message):",
+        "peekOfCode": "router = Router()\nrouter.action_message(StartCommand, StartCommand.__call__,\n                      Command(commands=[\"start\"]))\nrouter.action_message(UserCommands, UserCommands.set_name,\n                      GetUsername.get_username)\nrouter.action_message(JobCommands, JobCommands.set_chat, F.chat_shared)\nclass WebAppDataFilter(Filter):\n    async def __call__(self, message: Message, **kwargs) -> Union[bool, Dict[str, Any]]:\n        return dict(web_app_data=message.web_app_data) if message.web_app_data else False\n# Хэндлер для обработки we_app_data",
         "detail": "app.apps.core.bot.routes.user_router",
         "documentation": {}
     },
@@ -5837,7 +6299,7 @@
         "kind": 6,
         "importPath": "app.apps.core.bot.enum",
         "description": "app.apps.core.bot.enum",
-        "peekOfCode": "class SearchType(Enum):\n    telegram_chats = 'Парсинг телеграмм чатов'\n    avito = 'Парсинг обьявлений Avito'\nclass UserRole(Enum):\n    ADMIN=\"admin\"\n    USER=\"user\"\n    WRITER=\"writer\"\n    REQUEST_WRITER=\"request_writer\"",
+        "peekOfCode": "class SearchType(Enum):\n    telegram_chats = 'Парсинг телеграмм чатов'\n    avito = 'Парсинг обьявлений Avito'\nclass UserRole(Enum):\n    ADMIN=\"admin\"\n    USER=\"user\"\n    WRITER=\"writer\"\n    REQUEST_WRITER=\"request_writer\"\nclass ReviewStatus(Enum):\n    APPROVED=\"approwed\"",
         "detail": "app.apps.core.bot.enum",
         "documentation": {}
     },
@@ -5846,7 +6308,16 @@
         "kind": 6,
         "importPath": "app.apps.core.bot.enum",
         "description": "app.apps.core.bot.enum",
-        "peekOfCode": "class UserRole(Enum):\n    ADMIN=\"admin\"\n    USER=\"user\"\n    WRITER=\"writer\"\n    REQUEST_WRITER=\"request_writer\"",
+        "peekOfCode": "class UserRole(Enum):\n    ADMIN=\"admin\"\n    USER=\"user\"\n    WRITER=\"writer\"\n    REQUEST_WRITER=\"request_writer\"\nclass ReviewStatus(Enum):\n    APPROVED=\"approwed\"\n    REQUESTED=\"requested\"",
+        "detail": "app.apps.core.bot.enum",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewStatus",
+        "kind": 6,
+        "importPath": "app.apps.core.bot.enum",
+        "description": "app.apps.core.bot.enum",
+        "peekOfCode": "class ReviewStatus(Enum):\n    APPROVED=\"approwed\"\n    REQUESTED=\"requested\"",
         "detail": "app.apps.core.bot.enum",
         "documentation": {}
     },
@@ -5882,7 +6353,7 @@
         "kind": 2,
         "importPath": "app.apps.core.bot.helpers",
         "description": "app.apps.core.bot.helpers",
-        "peekOfCode": "def messager( method:str = '', *args) -> Messager|Text:\n    if method and hasattr(Messager, method) and callable(func := getattr(Messager, method)):\n        return func(*args)\n    return Messager\nasync def answer(m:Message, text, *args):\n    return await Responder(m).answer(text, *args)\ndef get_chats_sending_id():\n    return random.randint(3, 5)",
+        "peekOfCode": "def messager(method: str = '', *args) -> Messager | Text:\n    if method and hasattr(Messager, method) and callable(func := getattr(Messager, method)):\n        return func(*args)\n    return Messager\nasync def answer(m: Message, text, *args):\n    return await Responder(m).answer(text, *args)\ndef get_chats_sending_id():\n    return random.randint(3, 5)\ndef get_debtor_info(iin):\n    api_key = '124ba359ba6745bf9d2c149a8dd0e273'",
         "detail": "app.apps.core.bot.helpers",
         "documentation": {}
     },
@@ -5891,7 +6362,16 @@
         "kind": 2,
         "importPath": "app.apps.core.bot.helpers",
         "description": "app.apps.core.bot.helpers",
-        "peekOfCode": "def get_chats_sending_id():\n    return random.randint(3, 5)",
+        "peekOfCode": "def get_chats_sending_id():\n    return random.randint(3, 5)\ndef get_debtor_info(iin):\n    api_key = '124ba359ba6745bf9d2c149a8dd0e273'\n    payload = f\"\"\"<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soap=\"http://soap.opendata.egov.nitec.kz/\">\n        <soapenv:Header/>\n        <soapenv:Body>\n            <soap:request>\n            <request>\n                <requestInfo>",
+        "detail": "app.apps.core.bot.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "get_debtor_info",
+        "kind": 2,
+        "importPath": "app.apps.core.bot.helpers",
+        "description": "app.apps.core.bot.helpers",
+        "peekOfCode": "def get_debtor_info(iin):\n    api_key = '124ba359ba6745bf9d2c149a8dd0e273'\n    payload = f\"\"\"<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:soap=\"http://soap.opendata.egov.nitec.kz/\">\n        <soapenv:Header/>\n        <soapenv:Body>\n            <soap:request>\n            <request>\n                <requestInfo>\n                    <messageId>7355bcb8-fcbe-4f14-83b7-392a7a79945d</messageId>\n                    <messageDate>{datetime.datetime.now().strftime(\"%Y-%m-%dT%H:%M:%S+05:00\")}</messageDate>",
         "detail": "app.apps.core.bot.helpers",
         "documentation": {}
     },
@@ -6175,12 +6655,66 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "app.apps.core.migrations.0026_debtor",
+        "description": "app.apps.core.migrations.0026_debtor",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        (\"core\", \"0025_remove_telegramuser_is_admin_and_more\"),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name=\"Debtor\",\n            fields=[\n                (\"id\", models.AutoField(primary_key=True, serialize=False)),\n                (",
+        "detail": "app.apps.core.migrations.0026_debtor",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "app.apps.core.migrations.0027_alter_debtor_text",
+        "description": "app.apps.core.migrations.0027_alter_debtor_text",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        (\"core\", \"0026_debtor\"),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name=\"debtor\",\n            name=\"text\",\n            field=models.CharField(blank=True, max_length=255, null=True, unique=True),\n        ),",
+        "detail": "app.apps.core.migrations.0027_alter_debtor_text",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "app.apps.core.migrations.0028_debtor_user",
+        "description": "app.apps.core.migrations.0028_debtor_user",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        (\"core\", \"0027_alter_debtor_text\"),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name=\"debtor\",\n            name=\"user\",\n            field=models.ForeignKey(\n                null=True,",
+        "detail": "app.apps.core.migrations.0028_debtor_user",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "app.apps.core.migrations.0029_debtor_status_alter_debtor_firstanme_and_more",
+        "description": "app.apps.core.migrations.0029_debtor_status_alter_debtor_firstanme_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        (\"core\", \"0028_debtor_user\"),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name=\"debtor\",\n            name=\"status\",\n            field=models.CharField(\n                default=app.apps.core.bot.enum.ReviewStatus[\"REQUESTED\"], max_length=50",
+        "detail": "app.apps.core.migrations.0029_debtor_status_alter_debtor_firstanme_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "app.apps.core.migrations.0030_rename_firstanme_debtor_firstname",
+        "description": "app.apps.core.migrations.0030_rename_firstanme_debtor_firstname",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        (\"core\", \"0029_debtor_status_alter_debtor_firstanme_and_more\"),\n    ]\n    operations = [\n        migrations.RenameField(\n            model_name=\"debtor\",\n            old_name=\"firstanme\",\n            new_name=\"firstname\",\n        ),",
+        "detail": "app.apps.core.migrations.0030_rename_firstanme_debtor_firstname",
+        "documentation": {}
+    },
+    {
         "label": "BaseRepository",
         "kind": 6,
         "importPath": "app.apps.core.repositories.base",
         "description": "app.apps.core.repositories.base",
         "peekOfCode": "class BaseRepository:\n    def to_list(self, sql):\n        return [item for item in sql]",
         "detail": "app.apps.core.repositories.base",
+        "documentation": {}
+    },
+    {
+        "label": "DebtorRepository",
+        "kind": 6,
+        "importPath": "app.apps.core.repositories.debtor_repository",
+        "description": "app.apps.core.repositories.debtor_repository",
+        "peekOfCode": "class DebtorRepository:\n    @sync_to_async\n    def create(self: None, data: dict) -> tuple[Debtor, bool]:\n        deb = Debtor.objects.create(\n            iin_or_bin=data['iin'],\n            firstname=data['firstname'],\n            lastname=data['lastname'],\n            text=data['review_text'],\n            user=data['user'],\n            status = data['status'] if 'status' in data else ReviewStatus.REQUESTED",
+        "detail": "app.apps.core.repositories.debtor_repository",
         "documentation": {}
     },
     {
@@ -6322,7 +6856,7 @@
         "kind": 6,
         "importPath": "app.apps.core.DTO",
         "description": "app.apps.core.DTO",
-        "peekOfCode": "class SearchOrderDTO(DTO):\n    keywords: List[str] = None\n    leads: List[SearchLead] = None\n    user: TelegramUser | None = None\nclass ChatsWithOrdersDto(DTO):\n    chat_id:str|int = None\n    orders:List[SearchOrderDTO] = None",
+        "peekOfCode": "class SearchOrderDTO(DTO):\n    keywords: List[str] = None\n    leads: List[SearchLead] = None\n    user: TelegramUser | None = None\nclass ChatsWithOrdersDto(DTO):\n    chat_id:str|int = None\n    orders:List[SearchOrderDTO] = None\nclass DebtorSearchState(StatesGroup):\n    iin = State()\nclass DebtorState(StatesGroup):",
         "detail": "app.apps.core.DTO",
         "documentation": {}
     },
@@ -6331,7 +6865,25 @@
         "kind": 6,
         "importPath": "app.apps.core.DTO",
         "description": "app.apps.core.DTO",
-        "peekOfCode": "class ChatsWithOrdersDto(DTO):\n    chat_id:str|int = None\n    orders:List[SearchOrderDTO] = None",
+        "peekOfCode": "class ChatsWithOrdersDto(DTO):\n    chat_id:str|int = None\n    orders:List[SearchOrderDTO] = None\nclass DebtorSearchState(StatesGroup):\n    iin = State()\nclass DebtorState(StatesGroup):\n    msg_id = State()\n    text = State()",
+        "detail": "app.apps.core.DTO",
+        "documentation": {}
+    },
+    {
+        "label": "DebtorSearchState",
+        "kind": 6,
+        "importPath": "app.apps.core.DTO",
+        "description": "app.apps.core.DTO",
+        "peekOfCode": "class DebtorSearchState(StatesGroup):\n    iin = State()\nclass DebtorState(StatesGroup):\n    msg_id = State()\n    text = State()",
+        "detail": "app.apps.core.DTO",
+        "documentation": {}
+    },
+    {
+        "label": "DebtorState",
+        "kind": 6,
+        "importPath": "app.apps.core.DTO",
+        "description": "app.apps.core.DTO",
+        "peekOfCode": "class DebtorState(StatesGroup):\n    msg_id = State()\n    text = State()",
         "detail": "app.apps.core.DTO",
         "documentation": {}
     },
@@ -6386,6 +6938,15 @@
         "importPath": "app.apps.core.models",
         "description": "app.apps.core.models",
         "peekOfCode": "class TelegramUser(models.Model):\n    id=models.AutoField(primary_key=True)\n    search_accounts= models.ManyToManyField(SearchTelegramUser, blank=True, null=True)\n    telegram_username = models.CharField(max_length=80)\n    telegram_id = models.CharField(max_length=50, blank=True, null=True, unique=True)\n    telegram_name = models.CharField(max_length=50, blank=True, null=True)\n    phone_number = models.CharField(max_length=50, blank=True, null=True)\n    role = models.CharField(max_length=50, blank=True, default=UserRole.USER.value)\n    tariff_plan = models.ForeignKey(\n        TariffPlan, on_delete=models.SET_NULL, null=True, blank=True, related_name='telegram_user')",
+        "detail": "app.apps.core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Debtor",
+        "kind": 6,
+        "importPath": "app.apps.core.models",
+        "description": "app.apps.core.models",
+        "peekOfCode": "class Debtor(models.Model):\n    id=models.AutoField(primary_key=True)\n    user = models.ForeignKey(TelegramUser, on_delete=models.CASCADE, null=True)\n    status = models.CharField(max_length=50,  default=ReviewStatus.REQUESTED) \n    iin_or_bin = models.CharField(max_length=50,  blank=True, null=True, )\n    firstname = models.CharField(max_length=50,  blank=True, null=True, )\n    lastname = models.CharField(max_length=50,  blank=True, null=True, )\n    text = models.CharField(max_length=255,  blank=True, null=True, )\nclass Search(models.Model):\n    SEARCH_STATUSES = (",
         "detail": "app.apps.core.models",
         "documentation": {}
     },

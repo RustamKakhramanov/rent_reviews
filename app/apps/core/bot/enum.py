@@ -20,3 +20,7 @@ class UserRole(Enum):
     WRITER="writer"
     REQUEST_WRITER="request_writer"
     
+class ReviewStatus(Enum):
+    APPROVED="approwed"
+    REQUESTED="requested"
+    
