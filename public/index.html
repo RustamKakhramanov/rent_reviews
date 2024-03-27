@@ -20,7 +20,8 @@
                 <input type="text" placeholder="Введите Фамилию" name="lastname" id="lastname" minlength="2" required />
             </div>
             <div class="form_input_container">
-                <textarea type="text" rows="5" name="review_text" id="review_text" maxlength="140" required placeholder="Опишите произошедшее событие"></textarea>
+                <textarea type="text" rows="5" name="review_text" id="review_text" maxlength="440" required
+                    placeholder="Опишите произошедшее событие"></textarea>
             </div>
             <div class="form_input_container">
                 <button type="submit">Отправить</button>
@@ -71,7 +72,7 @@
         form {
             width: 100%;
         }
-        
+
         body {
             touch-action: none;
         }
@@ -100,9 +101,12 @@
             border: none;
             border-radius: 5px;
         }
-
+        input {
+            font-size: 16px;
+        }
         textarea {
             resize: vertical;
+            font-size: 16px;
         }
 
         .form_input_container button:hover {
@@ -123,5 +127,4 @@
         }
     </style>
 </body>
-
 </html>
