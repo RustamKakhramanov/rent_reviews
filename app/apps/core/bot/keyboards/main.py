@@ -12,7 +12,7 @@ def reply_keyboard(user: TelegramUser, hide_stay_admin: bool = False) -> ReplyKe
     builder = ReplyKeyboardBuilder()
     if not hide_stay_admin:
         if user.role == UserRole.USER.value:
-            builder.button( text='Стать админом')
+            builder.button( text='Добавить недобросовестного клиента')
 
     if user.role == UserRole.ADMIN.value or user.role == UserRole.WRITER.value:
         builder.button(text='Добавить недобросовестного клиента',  web_app=WebAppInfo(url="https://rent-reviews.vercel.app"))
@@ -48,7 +48,7 @@ def start_keyboard(user: TelegramUser) -> InlineKeyboardMarkup:
 
     if not user.is_admin:
         builder.button(
-            text='Стать админом',
+            text='Добавить недобросовестного клиента',
             callback_data=UserCallbackData(
                 action='stay_admin',
                 id=user.telegram_id,

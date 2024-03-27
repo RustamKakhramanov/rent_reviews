@@ -84,7 +84,7 @@ async def ask_check_iin(message: Message, state: FSMContext):
     await message.answer("Введите иин")
 
 
-@router.message(F.text == 'Стать админом')
+@router.message(F.text == 'Добавить недобросовестного клиента')
 async def start_search(message: Message):
     await UserCommands(message).ask_writer()  
  

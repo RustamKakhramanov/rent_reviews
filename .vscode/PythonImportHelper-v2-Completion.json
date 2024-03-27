@@ -5975,7 +5975,7 @@
         "kind": 2,
         "importPath": "app.apps.core.bot.keyboards.main",
         "description": "app.apps.core.bot.keyboards.main",
-        "peekOfCode": "def reply_keyboard(user: TelegramUser, hide_stay_admin: bool = False) -> ReplyKeyboardMarkup:\n    builder = ReplyKeyboardBuilder()\n    if not hide_stay_admin:\n        if user.role == UserRole.USER.value:\n            builder.button( text='Стать админом')\n    if user.role == UserRole.ADMIN.value or user.role == UserRole.WRITER.value:\n        builder.button(text='Добавить недобросовестного клиента',  web_app=WebAppInfo(url=\"https://rent-reviews.vercel.app\"))\n    builder.button(text='Проверить')\n    return builder.adjust(1,1).as_markup(resize_keyboard=False)\ndef allow_writer(user: TelegramUser) -> InlineKeyboardMarkup:",
+        "peekOfCode": "def reply_keyboard(user: TelegramUser, hide_stay_admin: bool = False) -> ReplyKeyboardMarkup:\n    builder = ReplyKeyboardBuilder()\n    if not hide_stay_admin:\n        if user.role == UserRole.USER.value:\n            builder.button( text='Добавить недобросовестного клиента')\n    if user.role == UserRole.ADMIN.value or user.role == UserRole.WRITER.value:\n        builder.button(text='Добавить недобросовестного клиента',  web_app=WebAppInfo(url=\"https://rent-reviews.vercel.app\"))\n    builder.button(text='Проверить')\n    return builder.adjust(1,1).as_markup(resize_keyboard=False)\ndef allow_writer(user: TelegramUser) -> InlineKeyboardMarkup:",
         "detail": "app.apps.core.bot.keyboards.main",
         "documentation": {}
     },
@@ -6002,7 +6002,7 @@
         "kind": 2,
         "importPath": "app.apps.core.bot.keyboards.main",
         "description": "app.apps.core.bot.keyboards.main",
-        "peekOfCode": "def start_keyboard(user: TelegramUser) -> InlineKeyboardMarkup:\n    builder = InlineKeyboardBuilder()\n    if not user.is_admin:\n        builder.button(\n            text='Стать админом',\n            callback_data=UserCallbackData(\n                action='stay_admin',\n                id=user.telegram_id,\n            ).pack()\n        )",
+        "peekOfCode": "def start_keyboard(user: TelegramUser) -> InlineKeyboardMarkup:\n    builder = InlineKeyboardBuilder()\n    if not user.is_admin:\n        builder.button(\n            text='Добавить недобросовестного клиента',\n            callback_data=UserCallbackData(\n                action='stay_admin',\n                id=user.telegram_id,\n            ).pack()\n        )",
         "detail": "app.apps.core.bot.keyboards.main",
         "documentation": {}
     },
