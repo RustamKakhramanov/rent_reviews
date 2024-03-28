@@ -32,14 +32,20 @@ class CheckController(BaseController):
     state: FSMContext
 
     def get_years_from_iin(self, iin: str) -> List[int]:
+        today = datetime.date.today()
+    
         year_str = iin[:2]
-        if(year_str[0] == '0'):
+        if (year_str[0] == '0'):
             year = int(f'20{year_str}')
         else:
             year = int(f'19{year_str}')
-        age =  datetime.date.today().year  -  year
+        
         month = int(iin[2:4])
         day = int(iin[4:6])
+        
+        born = datetime.datetime.strptime(f'{day}.{month}.{year}', '%d.%m.%Y' )
+        
+        age =   today.year - born.year - ((today.month, today.day) < (born.month, born.day))
         
         return [age,f'{day}.{month}.{year}' ]
     
