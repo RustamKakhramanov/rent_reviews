@@ -33,22 +33,23 @@ class CheckController(BaseController):
 
     def get_years_from_iin(self, iin: str) -> List[int]:
         today = datetime.date.today()
-    
+   
         year_str = iin[:2]
         if (year_str[0] == '0'):
             year = int(f'20{year_str}')
         else:
             year = int(f'19{year_str}')
         
-        month = int(iin[2:4])
-        day = int(iin[4:6])
+        month = f"{iin[2]}{iin[3]}"
+        day =  f"{iin[4]}{iin[5]}"
         
         born = datetime.datetime.strptime(f'{day}.{month}.{year}', '%d.%m.%Y' )
         
         age =   today.year - born.year - ((today.month, today.day) < (born.month, born.day))
         
-        return [age,f'{day}.{month}.{year}' ]
-    
+
+        return [age, f'{day}.{month}.{year}']
+        
     
     async def check_iin(self,   state: FSMContext):
         # iin = "960820351854"
@@ -92,8 +93,8 @@ class CheckController(BaseController):
                         '',
                             as_list(
                                    as_key_value('ИИН', iin),
-                                    as_key_value('Дата рождения',self.get_years_from_iin(iin)[0]),
-                                    as_key_value('Возраст, лет', self.get_years_from_iin(iin)[1]),
+                                    as_key_value('Дата рождения', self.get_years_from_iin(iin)[1]),
+                                    as_key_value('Возраст, лет', self.get_years_from_iin(iin)[0]),
                             )
                         ),
                         as_line(),
