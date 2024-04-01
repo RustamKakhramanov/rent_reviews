@@ -59,33 +59,34 @@ class CheckController(BaseController):
             from_api_info = get_debtor_info(iin)
             from_db = await self.repo.get_by_iin(iin=iin)
             if (from_db or from_api_info):
-                for deb in from_db:
-                    info = as_section(
-                        f"Информация из базы данных по иин: {iin}",
-                        as_list(
+                if (from_db):
+                    for deb in from_db:
+                        info = as_section(
+                            f"Информация из базы данных по иин: {iin}",
+                            as_list(
+                                as_key_value(
+                                    'Должник',  f"{deb.firstname} {deb.lastname}"),
+                                as_key_value('Обстоятельства', deb.text),
+                            ))
+                        await self.message.answer(info.as_html())
+
+                if (from_api_info):
+                    for item in from_api_info:
+                        info = as_list(
                             as_key_value(
-                                'Должник',  f"{deb.firstname} {deb.lastname}"),
-                            as_key_value('Обстоятельства', deb.text),
-                        ))
-                    await self.message.answer(info.as_html())
+                                'Орган, выдавший исполнительный документ', item['ilOrganRu']),
+                            as_key_value(
+                                'Номер исполнительного производства и дата возбуждения', item['ilDate']),
+                            as_key_value(
+                                'Должник',  f"{item['firstname']} {item['lastname']}"),
+                            as_key_value('Взыскатель', item['recoverer']),
+                            as_key_value('Сумма взысканий',
+                                        item['recovery_amount']),
+                            as_key_value('Орган исполнительного пр-ва',
+                                        item['bailiffs']),
+                        )
 
-            if (from_api_info):
-                for item in from_api_info:
-                    info = as_list(
-                        as_key_value(
-                            'Орган, выдавший исполнительный документ', item['ilOrganRu']),
-                        as_key_value(
-                            'Номер исполнительного производства и дата возбуждения', item['ilDate']),
-                        as_key_value(
-                            'Должник',  f"{item['firstname']} {item['lastname']}"),
-                        as_key_value('Взыскатель', item['recoverer']),
-                        as_key_value('Сумма взысканий',
-                                     item['recovery_amount']),
-                        as_key_value('Орган исполнительного пр-ва',
-                                     item['bailiffs']),
-                    )
-
-                    await self.message.answer(info.as_html())
+                        await self.message.answer(info.as_html())
             else:
                 await self.response(
                     as_list(
@@ -150,7 +151,7 @@ class CheckController(BaseController):
                         as_section(
                         '[Прокаты, аренда]',
                             as_marked_list(
-                                as_key_value('Информация по прокатам','Не найдено'),
+                                as_key_value('Информация по прокатам', 'Не найдено'),
                                 marker='•⁠ '
                             )
                         ),

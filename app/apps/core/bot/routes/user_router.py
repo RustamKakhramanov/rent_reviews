@@ -52,7 +52,7 @@ async def web_app_data(message: Message, state: FSMContext):
     data['user'] = user
     
     if(user.role==UserRole.ADMIN.value):
-        data['status'] = ReviewStatus.ALLOWED
+        data['status'] = ReviewStatus.APPROVED.value
         
     debtor = await DebtorRepository.create(data)
     
